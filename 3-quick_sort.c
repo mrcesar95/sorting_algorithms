@@ -17,7 +17,7 @@ void _swap(int *a, int *b)
 }
 
 /**
- * partition- partition th array
+ * partition - partition the array
  *
  * @array: array
  * @left: first int pointer
@@ -72,7 +72,8 @@ void recursive_quick_sort(int *array, int left, int right, size_t size)
 }
 
 /**
- * quic_sort - choose the min num,ber and swap between the initial
+ * quick_sort - choose the min number and swap between the initial
+ *
  * @array: array of integers
  * @size: size of the array
  * Return: void
