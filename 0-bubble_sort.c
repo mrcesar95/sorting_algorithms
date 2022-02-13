@@ -3,13 +3,12 @@
 /**
  * _swap - swap between 2 pointers of int
  *
- * @a: first int poniter
+ * @a: first int pointer
  * @b: second int pointer
  * Return: void
  */
 void _swap(int *a, int *b)
 {
-
 	int tmp;
 
 	tmp = *a;
@@ -18,7 +17,7 @@ void _swap(int *a, int *b)
 }
 
 /**
- * bubble_sort - Bubble sort algoritm
+ * bubble_sort - Bubble sort algorithm
  *
  * @array: The array to be printed
  * @size: Number of elements in @array
@@ -26,7 +25,6 @@ void _swap(int *a, int *b)
  */
 void bubble_sort(int *array, size_t size)
 {
-
 	unsigned int i = 0, j = 0;
 
 	if (size <= 1)
