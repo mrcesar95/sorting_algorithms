@@ -5,7 +5,7 @@
  * @array: unsorted array of integer and result
  * @helper: copy of the part we want to sort of array
  * @low: low limit of the unsorted block of array
- * @middle: separation between2 blocks, it is in left side
+ * @middle: separation between 2 block, it is in left side
  * @high: high limit of the unsorted block of array
  *
  * Return: void
@@ -19,7 +19,7 @@ void merge(int *array, int *helper, int low, int middle, int high)
 	for (i = low; i <= high; i++)
 		helper[i] = array[i];
 
-	printf("Mergin...\n");
+	printf("Merging...\n");
 	printf("[left]: ");
 	print_array(array + helperLeft, helperRight - helperLeft);
 	printf("[right]: ");
@@ -47,12 +47,12 @@ void merge(int *array, int *helper, int low, int middle, int high)
 }
 
 /**
- * recursive_merge_sort - recursive merge sort algorithm, divide in 2 parts
+ * recursive_merge_sort - recursive merge sort algorithm, divide in 2 part
  * where left < right
- * @array: unsorted array of integers
+ * @array: unsorted array of integer
  * @helper: helper array from array
- * @low: helper left
- * @high: helper right
+ * @low: helper Left
+ * @high: helper righ
  *
  * Return: void
  */
@@ -63,15 +63,15 @@ void recursive_merge_sort(int *array, int *helper, int low, int high)
 	if (low < high && array)
 	{
 		middle = (low + high - 1) / 2;
-		recursive_merge_sort(array, helper, low, middle);	   /* sort left */
+		recursive_merge_sort(array, helper, low, middle); /* sort left */
 		recursive_merge_sort(array, helper, middle + 1, high); /* sort right */
-		merge(array, helper, low, middle, high);			   /* merge hem */
+		merge(array, helper, low, middle, high); /* merge them */
 	}
 }
 
 /**
  * merge_sort - merge sort algorithm
- * @array: unsorted array of integers
+ * @array: unsorted array of integer
  * @size: size of the array
  *
  * Return: void
